@@ -4,7 +4,7 @@
       <article>
         <section v-if="step === 1" class="bg-purple aligncenter">
                     <span class="background dark"
-                          style="background-image:url('/images/slides/rawpixel-558599-unsplash.jpg')"></span>
+                          style="background-image:url('images/slides/intro.jpg')"></span>
           <div class="wrap">
             <h1 class="text-landing">Modern Web Development with Vue.js</h1>
             <p class="text-intro">State of the Art. Vue.js Stärken. Ausblick.</p>
@@ -14,7 +14,7 @@
         <section v-if="step === 2">
           <div class="wrap">
             <div class="card-50">
-              <figure style="padding: 4.8rem"><img src="/images/logos/vue.png" width="450"></figure>
+              <figure style="padding: 4.8rem"><img src="images/logos/vue.png" width="450"></figure>
               <blockquote>
                 <p>&#187;Vue is a progressive framework for building user interfaces. Unlike other
                   monolithic frameworks, Vue is designed from the ground up to be incrementally
@@ -143,7 +143,7 @@
             <figure>
               <span
                       class="background anim dark"
-                      style="background: url('/images/slides/behance.png') 50% 5%;">
+                      style="background: url('images/slides/behance.png') 50% 5%;">
               </span>
             </figure>
             <div class="flex-content">
@@ -193,7 +193,7 @@
             <figure>
               <span
                       class="background anim dark"
-                      style="background: url('/images/slides/clemengerbbdo.png') 50% 0%;">
+                      style="background: url('images/slides/clemengerbbdo.png') 50% 0%;">
               </span>
             </figure>
             <div class="flex-content">
@@ -243,7 +243,7 @@
             <figure>
               <span
                       class="background anim dark"
-                      style="background: url('/images/slides/codeship.png') 50% 0%;">
+                      style="background: url('images/slides/codeship.png') 50% 0%;">
               </span>
             </figure>
             <div class="flex-content">

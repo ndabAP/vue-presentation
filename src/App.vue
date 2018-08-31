@@ -18,7 +18,7 @@
                 <p>&#187;Vue is a progressive framework for building user interfaces. Unlike other
                   monolithic frameworks, Vue is designed from the ground up to be incrementally
                   adoptable.&#171;</p>
-                <p><cite><a href="">Vue.js</a> website</cite></p>
+                <p><cite><a href="#">Vue.js</a> website</cite></p>
               </blockquote>
             </div>
           </div>
@@ -30,101 +30,85 @@
             <p class="text-intro">Staatliche, Non-Profit und kommerzielle Firmen setzen auf Vue.js.</p>
             <ul class="flexblock">
               <li>
-                <a href="">
-                  <div>
-                    <h3>Alibaba</h3>
-                    <ol>
-                      <li>Revenue: $39 Mrd.</li>
-                      <li>Employees: 66.000</li>
-                      <li>Use: Native Apps</li>
-                    </ol>
-                  </div>
-                </a>
+                <div>
+                  <h3>Alibaba</h3>
+                  <ol>
+                    <li>Revenue: $39 Mrd.</li>
+                    <li>Employees: 66.000</li>
+                    <li>Use: Native Apps</li>
+                  </ol>
+                </div>
               </li>
               <li>
-                <a href="">
-                  <div>
-                    <h3>Adobe</h3>
-                    <ol>
-                      <li>Revenue: $7 Mrd.</li>
-                      <li>Employees: 15.000</li>
-                      <li>Use: Adobe Behance</li>
-                    </ol>
-                  </div>
-                </a>
+                <div>
+                  <h3>Adobe</h3>
+                  <ol>
+                    <li>Revenue: $7 Mrd.</li>
+                    <li>Employees: 15.000</li>
+                    <li>Use: Adobe Behance</li>
+                  </ol>
+                </div>
               </li>
               <li>
-                <a href="">
-                  <div>
-                    <h3>GitLab</h3>
-                    <ol>
-                      <li>Revenue: $6 Mill.</li>
-                      <li>Employees: 325</li>
-                      <li>Use: User Interface</li>
-                    </ol>
-                  </div>
-                </a>
+                <div>
+                  <h3>GitLab</h3>
+                  <ol>
+                    <li>Revenue: $6 Mill.</li>
+                    <li>Employees: 325</li>
+                    <li>Use: User Interface</li>
+                  </ol>
+                </div>
               </li>
               <li>
-                <a href="">
-                  <div>
-                    <h3>NASA</h3>
-                    <ol>
-                      <li>Haushaltsvol.: $18 Mrd.</li>
-                      <li>Employees: 17.000</li>
-                      <li>Use: Wissenschaf. Seite</li>
-                    </ol>
-                  </div>
-                </a>
+                <div>
+                  <h3>NASA</h3>
+                  <ol>
+                    <li>Haushaltsvol.: $18 Mrd.</li>
+                    <li>Employees: 17.000</li>
+                    <li>Use: Wissenschaf. Seite</li>
+                  </ol>
+                </div>
               </li>
 
               <li v-if="step === 4">
-                <a href="">
-                  <div>
-                    <h3>Facebook</h3>
-                    <ol>
-                      <li>Revenue: $40 Mrd.</li>
-                      <li>Employees: 27.000</li>
-                      <li>Use: Newsfeeds</li>
-                    </ol>
-                  </div>
-                </a>
+                <div>
+                  <h3>Facebook</h3>
+                  <ol>
+                    <li>Revenue: $40 Mrd.</li>
+                    <li>Employees: 27.000</li>
+                    <li>Use: Newsfeeds</li>
+                  </ol>
+                </div>
               </li>
               <li v-if="step === 4">
-                <a href="">
-                  <div>
-                    <h3>Netflix</h3>
-                    <ol>
-                      <li>Revenue: $11 Mrd.</li>
-                      <li>Employees: 5.000</li>
-                      <li>Use: Cloud-Verwaltung</li>
-                    </ol>
-                  </div>
-                </a>
+                <div>
+                  <h3>Netflix</h3>
+                  <ol>
+                    <li>Revenue: $11 Mrd.</li>
+                    <li>Employees: 5.000</li>
+                    <li>Use: Cloud-Verwaltung</li>
+                  </ol>
+                </div>
               </li>
               <li v-if="step === 4">
-                <a href="">
-                  <div>
-                    <h3>Wizz Air</h3>
-                    <ol>
-                      <li>Revenue: $1 Mrd.</li>
-                      <li>Employees: 2.000</li>
-                      <li>Use: User Interface</li>
-                    </ol>
-                  </div>
-                </a>
+                <div>
+                  <h3>Wizz Air</h3>
+                  <ol>
+                    <li>Revenue: $1 Mrd.</li>
+                    <li>Employees: 2.000</li>
+                    <li>Use: User Interface</li>
+                  </ol>
+                </div>
               </li>
               <li v-if="step === 4">
-                <a href="">
-                  <div>
-                    <h3>Codeship</h3>
-                    <ol>
-                      <li>Umsatz.: $3 Mill.</li>
-                      <li>Employees: 27</li>
-                      <li>Use: Absturzfreie Apps</li>
-                    </ol>
-                  </div>
-                </a>
+                <div>
+                  <h3>Codeship</h3>
+                  <ol>
+                    <li>Revenue: $3 Mill.</li>
+                    <li>Employees: 27</li>
+                    <li>Use: Absturzfreie Apps</li>
+                  </ol>
+                </div>
               </li>
             </ul>
           </div>
@@ -182,7 +166,7 @@
                 <p>&#187;Jedes Mal, wenn ich irgendwelche Probleme hatte, war es normalerweise, weil ich es zerdacht
                   habe und
                   ich war angenehm überrascht, als es wirklich so einfach zu implementieren war.&#171;</p>
-                <p><cite><a href="">Erin Depew</a> Software Engineer at Behance</cite></p>
+                <p><cite><a href="#">Erin Depew</a> Software Engineer at Behance</cite></p>
               </blockquote>
             </div>
           </div>
@@ -233,7 +217,7 @@
                 <p>&#187;Vue.js ermöglicht ein komfortables Entwicklen in unserem Team. Es ist so nah an nativem
                   JavaScript, dass
                   es extrem einfach ist damit zu starten und zu arbeiten.&#171;</p>
-                <p><cite><a href="">Sylvain Simao</a> Technical Lead at Clemenger BBDO Melbourne</cite></p>
+                <p><cite><a href="#">Sylvain Simao</a> Technical Lead at Clemenger BBDO Melbourne</cite></p>
               </blockquote>
             </div>
           </div>
@@ -284,7 +268,7 @@
                 <p>&#187;Vue.js bietet ein solides Fundament das beliebig erweitert werden kann und es ist nicht
                   einschränkend
                   bei Tools, mit denen wir außerdem unsere Ziele verfolgen.&#171;</p>
-                <p><cite><a href="">Roman Kuba</a> Lead Frontend Developer at Codeship</cite></p>
+                <p><cite><a href="#">Roman Kuba</a> Lead Frontend Developer at Codeship</cite></p>
               </blockquote>
             </div>
           </div>
@@ -299,8 +283,8 @@
 
         <section v-if="step >= 13 && step < 15" class="fullscreen bg-trans-dark">
           <div class="wrap">
-          <h2>Umfrage</h2>
-          <p class="text-intro">Entwickler aus 88 Ländern wurden befragt.</p>
+            <h2>Umfrage</h2>
+            <p class="text-intro">Entwickler aus 88 Ländern wurden befragt.</p>
             <ul class="flexblock metrics">
               <li>
                 <span>96 %</span> würden Vue.js in einem anderen Projekt erneut verwenden
@@ -369,11 +353,11 @@
 import { Slideshow } from 'eagle.js'
 
 Slideshow.methods.handleResize = () => null
+Slideshow.methods.click = () => null
 
 export default {
   mixins: [Slideshow],
 
-  data: () => ({
-  })
+  data: () => ({})
 }
 </script>

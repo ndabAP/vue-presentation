@@ -442,6 +442,10 @@
     -webkit-box-shadow: none;
     box-shadow: none;
   }
+
+  .logo {
+    text-transform: none;
+  }
 </style>
 
 <script>
@@ -463,8 +467,10 @@ export default {
   }),
 
   computed: {
-    total () {
-      return this.product.price * this.product.amount
+    total: {
+      get () {
+        return this.product.price * this.product.amount
+      }
     }
   }
 }

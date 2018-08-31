@@ -5,7 +5,7 @@
         <section v-if="step === 1" class="bg-purple aligncenter">
                     <span class="background dark"
                           style="background-image:url('images/slides/intro.jpg')"></span>
-          <div class="wrap">
+          <div class="wrap slow">
             <h1 class="text-landing">Modern Web Development with Vue.js</h1>
             <p class="text-intro">State of the Art. Vue.js Stärken. Ausblick.</p>
           </div>
@@ -70,7 +70,7 @@
                 </div>
               </li>
 
-              <li v-if="step === 4">
+              <li v-if="step === 4" class="slideInUp">
                 <div>
                   <h3>Facebook</h3>
                   <ol>
@@ -80,7 +80,7 @@
                   </ol>
                 </div>
               </li>
-              <li v-if="step === 4">
+              <li v-if="step === 4" class="slideInUp">
                 <div>
                   <h3>Netflix</h3>
                   <ol>
@@ -90,7 +90,7 @@
                   </ol>
                 </div>
               </li>
-              <li v-if="step === 4">
+              <li v-if="step === 4" class="slideInUp">
                 <div>
                   <h3>Wizz Air</h3>
                   <ol>
@@ -100,7 +100,7 @@
                   </ol>
                 </div>
               </li>
-              <li v-if="step === 4">
+              <li v-if="step === 4" class="slideInUp">
                 <div>
                   <h3>Codeship</h3>
                   <ol>
@@ -121,7 +121,7 @@
           </div>
         </section>
 
-        <section v-if="step === 6" class="fullscreen bg-white">
+        <section v-if="step === 6" class="fullscreen bg-white slow">
           <div class="card-50">
             <figure>
               <span
@@ -131,7 +131,7 @@
             </figure>
             <div class="flex-content">
               <h2>Adobe Behance</h2>
-              <p class="text-intro">Kreative Arbeiten, Präsentieren und Entdecken</p>
+              <p class="text-intro">Portfolios der kreativsten Köpfe</p>
 
               <ul class="description">
                 <li><span class="s-b">Challenges</span>
@@ -149,7 +149,7 @@
                 </li>
                 <li><span class="s-b">Results</span>
                   <ul>
-                    <li style="padding: 0">Einfache Integration des alten Cods</li>
+                    <li style="padding: 0">Einfache Integration des alten Codes</li>
                     <li style="padding: 0">Schnelles Einfügen neuer Features</li>
                     <li style="padding: 0">Kostengünstige und hochperfomante Apps</li>
                   </ul>
@@ -172,7 +172,7 @@
           </div>
         </section>
 
-        <section v-if="step === 8" class="fullscreen bg-white">
+        <section v-if="step === 8" class="fullscreen bg-white slow">
           <div class="card-50">
             <figure>
               <span
@@ -223,7 +223,7 @@
           </div>
         </section>
 
-        <section v-if="step === 10" class="fullscreen bg-white">
+        <section v-if="step === 10" class="fullscreen bg-white slow">
           <div class="card-50">
             <figure>
               <span
@@ -295,13 +295,13 @@
               <li>
                 <span>81 %</span> empfanden es als einfach, Vue.js in ihr System zu integrieren
               </li>
-              <li v-if="step === 14">
+              <li v-if="step === 14" class="slideInUp">
                 <span>75 %</span> nahmen Vue.js in in den letzten 12 Monaten in ihrem Teck-Stack auf
               </li>
-              <li v-if="step === 14">
+              <li v-if="step === 14" class="slideInUp">
                 <span>50 %</span> empfinden es, dass Vue.js sehr anfängerfreundlich ist
               </li>
-              <li v-if="step === 14">
+              <li v-if="step === 14" class="slideInUp">
                 <span>54 %</span> glauben, dass Vue.js noch populärer in ihrer Organisation wird
               </li>
             </ul>

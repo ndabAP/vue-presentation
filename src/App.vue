@@ -14,11 +14,11 @@
         <section v-if="step === 2">
           <div class="wrap">
             <div class="card-50">
-              <figure style="padding: 4.8rem"><img src="/images/vue.png" width="450"></figure>
+              <figure style="padding: 4.8rem"><img src="/images/logos/vue.png" width="450"></figure>
               <blockquote>
                 <p>&#187;Vue is a progressive framework for building user interfaces. Unlike other
                   monolithic frameworks, Vue is designed from the ground up to be incrementally
-                  adoptable.&#171</p>
+                  adoptable.&#171;</p>
                 <p><cite>Vue.js website</cite></p>
               </blockquote>
             </div>
@@ -181,7 +181,7 @@
             <div class="content-center">
               <blockquote>
                 <p>&#187;Jedes Mal, wenn ich irgendwelche Probleme hatte, war es normalerweise, weil ich es zerdacht habe und
-                  ich war angenehm überrascht, als es wirklich so einfach zu implementieren war.&#171</p>
+                  ich war angenehm überrascht, als es wirklich so einfach zu implementieren war.&#171;</p>
                 <p><cite><a href="">Erin Depew</a> Software Engineer at Behance</cite></p>
               </blockquote>
             </div>
@@ -231,7 +231,7 @@
             <div class="content-center">
               <blockquote>
                 <p>&#187;Vue.js ermöglicht ein komfortables Entwicklen in unserem Team. Es ist so nah an nativem JavaScript, dass
-                  es extrem einfach ist damit zu starten und zu arbeiten.&#171</p>
+                  es extrem einfach ist damit zu starten und zu arbeiten.&#171;</p>
                 <p><cite><a href="">Sylvain Simao</a> Technical Lead at Clemenger BBDO Melbourne</cite></p>
               </blockquote>
             </div>
@@ -281,7 +281,7 @@
             <div class="content-center">
               <blockquote>
                 <p>&#187;Vue.js bietet ein solides Fundament das beliebig erweitert werden kann und es ist nicht einschränkend
-                  bei Tools, mit denen wir außerdem unsere Ziele verfolgen.&#171</p>
+                  bei Tools, mit denen wir außerdem unsere Ziele verfolgen.&#171;</p>
                 <p><cite><a href="">Roman Kuba</a> Lead Frontend Developer at Codeship</cite></p>
               </blockquote>
             </div>
@@ -340,26 +340,24 @@ export default {
       price: 64,
       type: ''
     }
-  }),
+  })
 
-  mounted () {
-    setInterval(() => {
-      const images = document.getElementsByClassName('anim')
-
-      if (images.length > 0) {
-        for (let image of images) {
-          console.log(image)
-          setInterval(() => {
-            let x = Math.random() * 100
-            let y = Math.random() * 100
-            let distance = Math.sqrt(Math.pow(x - x, 2) + Math.pow(y - y, 2))
-            let time = 10000 * (distance / 100)
-
-            // image.setAttribute('style', `background-position: `)
-          })
-        }
-      }
-    }, 1000)
-  }
+  // mounted () {
+  //   setInterval(() => {
+  //     const images = document.getElementsByClassName('anim')
+  //
+  //     if (images.length > 0) {
+  //       for (let image of images) {
+  //         setInterval(() => {
+  //           let x = Math.random() * 100
+  //           let y = Math.random() * 100
+  //           let distance = Math.sqrt(Math.pow(x - x, 2) + Math.pow(y - y, 2))
+  //           let time = 10000 * (distance / 100)
+  //           image.setAttribute('style', `background-position: `)
+  //         })
+  //       }
+  //     }
+  //   }, 1000)
+  // }
 }
 </script>

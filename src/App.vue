@@ -13,24 +13,23 @@
 
         <section v-if="step === 2">
           <div class="wrap">
-            <div class="card-50">
-              <figure style="padding: 4.8rem"><img src="images/logos/vue.png" width="450"></figure>
+            <div class="content-center">
               <blockquote>
                 <p>&#187;Vue is a progressive framework for building user interfaces. Unlike other
                   monolithic frameworks, Vue is designed from the ground up to be incrementally
                   adoptable.&#171;</p>
-                <p><cite>Vue.js website</cite></p>
+                <p><cite><a href="">Vue.js</a> website</cite></p>
               </blockquote>
             </div>
           </div>
         </section>
 
-        <section v-if="step >= 3 && step < 5" class="fullscreen">
+        <section v-if="step >= 3 && step < 5" class="fullscreen bg-trans-dark">
           <div class="wrap">
             <h2>Anwender</h2>
             <p class="text-intro">Staatliche, Non-Profit und kommerzielle Firmen setzen auf Vue.js.</p>
-            <ul class="flexblock blink border">
-              <li class="bg-green">
+            <ul class="flexblock">
+              <li>
                 <a href="">
                   <div>
                     <h3>Alibaba</h3>
@@ -42,7 +41,7 @@
                   </div>
                 </a>
               </li>
-              <li class="bg-purple">
+              <li>
                 <a href="">
                   <div>
                     <h3>Adobe</h3>
@@ -54,7 +53,7 @@
                   </div>
                 </a>
               </li>
-              <li class="bg-red">
+              <li>
                 <a href="">
                   <div>
                     <h3>GitLab</h3>
@@ -66,7 +65,7 @@
                   </div>
                 </a>
               </li>
-              <li class="bg-trans-dark">
+              <li>
                 <a href="">
                   <div>
                     <h3>NASA</h3>
@@ -79,7 +78,7 @@
                 </a>
               </li>
 
-              <li v-if="step === 4" class="bg-secondary">
+              <li v-if="step === 4">
                 <a href="">
                   <div>
                     <h3>Facebook</h3>
@@ -91,7 +90,7 @@
                   </div>
                 </a>
               </li>
-              <li v-if="step === 4" class="bg-trans-light">
+              <li v-if="step === 4">
                 <a href="">
                   <div>
                     <h3>Netflix</h3>
@@ -103,7 +102,7 @@
                   </div>
                 </a>
               </li>
-              <li v-if="step === 4" class="bg-primary">
+              <li v-if="step === 4">
                 <a href="">
                   <div>
                     <h3>Wizz Air</h3>
@@ -115,7 +114,7 @@
                   </div>
                 </a>
               </li>
-              <li v-if="step === 4" class="bg-black">
+              <li v-if="step === 4">
                 <a href="">
                   <div>
                     <h3>Codeship</h3>
@@ -180,7 +179,8 @@
           <div class="wrap">
             <div class="content-center">
               <blockquote>
-                <p>&#187;Jedes Mal, wenn ich irgendwelche Probleme hatte, war es normalerweise, weil ich es zerdacht habe und
+                <p>&#187;Jedes Mal, wenn ich irgendwelche Probleme hatte, war es normalerweise, weil ich es zerdacht
+                  habe und
                   ich war angenehm überrascht, als es wirklich so einfach zu implementieren war.&#171;</p>
                 <p><cite><a href="">Erin Depew</a> Software Engineer at Behance</cite></p>
               </blockquote>
@@ -230,7 +230,8 @@
           <div class="wrap">
             <div class="content-center">
               <blockquote>
-                <p>&#187;Vue.js ermöglicht ein komfortables Entwicklen in unserem Team. Es ist so nah an nativem JavaScript, dass
+                <p>&#187;Vue.js ermöglicht ein komfortables Entwicklen in unserem Team. Es ist so nah an nativem
+                  JavaScript, dass
                   es extrem einfach ist damit zu starten und zu arbeiten.&#171;</p>
                 <p><cite><a href="">Sylvain Simao</a> Technical Lead at Clemenger BBDO Melbourne</cite></p>
               </blockquote>
@@ -280,11 +281,46 @@
           <div class="wrap">
             <div class="content-center">
               <blockquote>
-                <p>&#187;Vue.js bietet ein solides Fundament das beliebig erweitert werden kann und es ist nicht einschränkend
+                <p>&#187;Vue.js bietet ein solides Fundament das beliebig erweitert werden kann und es ist nicht
+                  einschränkend
                   bei Tools, mit denen wir außerdem unsere Ziele verfolgen.&#171;</p>
                 <p><cite><a href="">Roman Kuba</a> Lead Frontend Developer at Codeship</cite></p>
               </blockquote>
             </div>
+          </div>
+        </section>
+
+        <section v-if="step === 12">
+          <div class="wrap aligncenter">
+            <p class="text-subtitle">Entwickler berichten über Vue.js</p>
+            <h2>In-Sight Developers</h2>
+          </div>
+        </section>
+
+        <section v-if="step >= 13 && step < 15" class="fullscreen bg-trans-dark">
+          <div class="wrap">
+          <h2>Umfrage</h2>
+          <p class="text-intro">Entwickler aus 88 Ländern wurden befragt.</p>
+            <ul class="flexblock metrics">
+              <li>
+                <span>96 %</span> würden Vue.js in einem anderen Projekt erneut verwenden
+              </li>
+              <li>
+                <span>94 %</span> nutzten beim Entwickeln die offzielle Hilfe von Vue.js
+              </li>
+              <li>
+                <span>81 %</span> empfanden es als einfach, Vue.js in ihr System zu integrieren
+              </li>
+              <li v-if="step === 14">
+                <span>75 %</span> nahmen Vue.js in in den letzten 12 Monaten in ihrem Teck-Stack auf
+              </li>
+              <li v-if="step === 14">
+                <span>50 %</span> empfinden es, dass Vue.js sehr anfängerfreundlich ist
+              </li>
+              <li v-if="step === 14">
+                <span>54 %</span> glauben, dass Vue.js noch populärer in ihrer Organisation wird
+              </li>
+            </ul>
           </div>
         </section>
       </article>
@@ -323,6 +359,10 @@
   .description > li {
     border: none;
   }
+
+  .metrics li {
+    width: 33.33333%;
+  }
 </style>
 
 <script>
@@ -334,30 +374,6 @@ export default {
   mixins: [Slideshow],
 
   data: () => ({
-    product: {
-      title: 'Jeans',
-      description: '5-pocket low-rise jeans in washed stretch denim with a button fly and slim legs. The jeans are made partly from recycled cotton.',
-      price: 64,
-      type: ''
-    }
   })
-
-  // mounted () {
-  //   setInterval(() => {
-  //     const images = document.getElementsByClassName('anim')
-  //
-  //     if (images.length > 0) {
-  //       for (let image of images) {
-  //         setInterval(() => {
-  //           let x = Math.random() * 100
-  //           let y = Math.random() * 100
-  //           let distance = Math.sqrt(Math.pow(x - x, 2) + Math.pow(y - y, 2))
-  //           let time = 10000 * (distance / 100)
-  //           image.setAttribute('style', `background-position: `)
-  //         })
-  //       }
-  //     }
-  //   }, 1000)
-  // }
 }
 </script>

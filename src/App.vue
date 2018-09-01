@@ -411,8 +411,23 @@
           </div>
         </section>
 
-        <section v-if="step === 20">
-
+        <section v-if="step === 20" class="aligncenter">
+          <div class="wrap">
+            <ul class="flexblock specs">
+              <li style="padding-bottom: 0.83em; padding-top: 0">
+                <div>
+                  <form @click.prevent>
+                    <fieldset style="padding: 0;">
+                      <input placeholder="To do" v-model="todo">
+                    </fieldset>
+                  </form>
+                </div>
+              </li>
+              <li style="padding-bottom: 0.83rem; padding-top: 0" v-for="todo in todos">
+                {{todo}}
+              </li>
+            </ul>
+          </div>
         </section>
 
         <section v-if="step === 22">
@@ -503,6 +518,10 @@
 
   thead th, th {
     text-transform: none;
+  }
+
+  .specs li:after {
+    background: transparent;
   }
 
   .s-b {
@@ -601,7 +620,10 @@ export default {
       description: 'A well fitting Jeans. Modern. Stylish.',
       price: 50,
       amount: 1
-    }
+    },
+
+    todo: '',
+    todos: ['Buy milk', 'Go out with dog', 'Learn football']
   }),
 
   computed: {

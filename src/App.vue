@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <slide :steps="20">
+    <slide :steps="30">
       <article>
         <section v-if="step === 1" class="bg-purple aligncenter">
                     <span class="background dark"
@@ -415,15 +415,63 @@
 
         </section>
 
-        <section v-if="false">
+        <section v-if="step === 22">
           <div class="wrap aligncenter">
             <p class="text-subtitle">Angular, React und Co.</p>
             <h2>Vue.js-Konkurrenz</h2>
           </div>
         </section>
 
-        <section v-if="false">
+        <section v-if="step === 23">
+          <div class="wrap">
+            <h2>Grundlegende Funktionen</h2>
+            <p class="text-intro">Vue.js vereint das Beste aus Angular und React.</p>
 
+            <table>
+              <thead>
+              <tr>
+                <th></th>
+                <th>Vue.js</th>
+                <th>Angular</th>
+                <th>React</th>
+              </tr>
+              </thead>
+              <tbody>
+              <tr>
+                <td class="s-b">JSX</td>
+                <td>Yes</td>
+                <td>No</td>
+                <td>Yes</td>
+              </tr>
+              <tr>
+                <td class="s-b">TypeScript</td>
+                <td>Yes</td>
+                <td>Yes</td>
+                <td>No</td>
+              </tr>
+              <tr>
+                <td class="s-b">Object-orientated</td>
+                <td>Yes</td>
+                <td>Yes</td>
+                <td>No</td>
+              </tr>
+              <tr>
+                <td class="s-b">Functional</td>
+                <td>Yes</td>
+                <td>No</td>
+                <td>Yes</td>
+              </tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
+
+        <section v-if="step === 24" class="aligncenter">
+          <div class="wrap">
+            <h2>Mögliche Lernkurven</h2>
+            <p class="text-intro">Viele Nutzer berichten von einer ähnlichen Lernkurve.</p>
+            <learning-curve/>
+          </div>
         </section>
       </article>
     </slide>
@@ -435,6 +483,26 @@
     font-size: 100%;
     hyphens: auto;
     overflow: hidden;
+  }
+
+  table {
+    margin: 0;
+  }
+
+  thead {
+    background-color: transparent;
+  }
+
+  table td, th, thead {
+    border: none;
+  }
+
+  tr:nth-child(even) > td {
+    background: none;
+  }
+
+  thead th, th {
+    text-transform: none;
   }
 
   .s-b {
@@ -515,11 +583,17 @@
 <script>
 import { Slideshow } from 'eagle.js'
 
+import LearningCurve from './components/LearningCurve'
+
 Slideshow.methods.handleResize = () => null
 Slideshow.methods.click = () => null
 
 export default {
   mixins: [Slideshow],
+
+  components: {
+    LearningCurve
+  },
 
   data: () => ({
     product: {

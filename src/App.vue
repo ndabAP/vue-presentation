@@ -24,7 +24,67 @@
           </div>
         </section>
 
-        <section v-if="step >= 3 && step < 5" class="fullscreen bg-trans-dark">
+        <section class="bg-brown fullscreen" v-if="step === 3">
+          <div class="wrap">
+            <h2>Quick Facts</h2>
+            <p class="text-intro">Vue.js in der wilden Landschaft.</p>
+            <ul class="flexblock">
+              <li>
+                <h3 class="s-b">Github Stars</h3>
+                112.000
+              </li>
+              <li>
+                <h3 class="s-b">Core Developer</h3>
+                30
+              </li>
+              <li>
+                <h3 class="s-b">Weekly Downloads</h3>
+                500.000
+              </li>
+              <li>
+                <h3 class="s-b">Github Repositories</h3>
+                89
+              </li>
+              <li>
+                <h3 class="s-b">Github popularity</h3>
+                3.
+              </li>
+              <li>
+                <h3 class="s-b">Sponsors</h3>
+                30
+              </li>
+              <li>
+                <h3 class="s-b">Core Repositories</h3>
+                8
+              </li>
+              <li>
+                <h3 class="s-b">Github related</h3>
+                12.000
+              </li>
+            </ul>
+          </div>
+        </section>
+
+        <section v-if="step === 4">
+          <div class="wrap">
+            <div class="content-center">
+              <blockquote>
+                <p>&#187;Over the last two years, Vue.js has grown at a faster percentage rate than any of the other
+                  dominant JavaScript frameworks.&#171;</p>
+                <p><cite><a href="#">Github</a> trends</cite></p>
+              </blockquote>
+            </div>
+          </div>
+        </section>
+
+        <section v-if="step === 5">
+          <div class="wrap aligncenter">
+            <p class="text-subtitle">Viele börsennotierte Firmen setzen auf Vue.js</p>
+            <h2>Important User</h2>
+          </div>
+        </section>
+
+        <section v-if="step >= 6 && step < 8" class="fullscreen bg-trans-dark">
           <div class="wrap">
             <h2>Anwender</h2>
             <p class="text-intro">Staatliche, Non-Profit und kommerzielle Firmen setzen auf Vue.js.</p>
@@ -63,14 +123,14 @@
                 <div>
                   <h3>NASA</h3>
                   <ol>
-                    <li>Haushaltsvol.: $18 Mrd.</li>
+                    <li>Vol.: $18 Mrd.</li>
                     <li>Employees: 17.000</li>
                     <li>Use: Wissenschaf. Seite</li>
                   </ol>
                 </div>
               </li>
 
-              <li v-if="step === 4" class="slideInUp">
+              <li v-if="step === 7" class="slideInUp">
                 <div>
                   <h3>Facebook</h3>
                   <ol>
@@ -80,7 +140,7 @@
                   </ol>
                 </div>
               </li>
-              <li v-if="step === 4" class="slideInUp">
+              <li v-if="step === 7" class="slideInUp">
                 <div>
                   <h3>Netflix</h3>
                   <ol>
@@ -90,7 +150,7 @@
                   </ol>
                 </div>
               </li>
-              <li v-if="step === 4" class="slideInUp">
+              <li v-if="step === 7" class="slideInUp">
                 <div>
                   <h3>Wizz Air</h3>
                   <ol>
@@ -100,7 +160,7 @@
                   </ol>
                 </div>
               </li>
-              <li v-if="step === 4" class="slideInUp">
+              <li v-if="step === 7" class="slideInUp">
                 <div>
                   <h3>Codeship</h3>
                   <ol>
@@ -114,14 +174,14 @@
           </div>
         </section>
 
-        <section v-if="step === 5">
+        <section v-if="step === 8">
           <div class="wrap aligncenter">
             <p class="text-subtitle">Firmen berichten über Vue.js</p>
             <h2>Case Studies</h2>
           </div>
         </section>
 
-        <section v-if="step === 6" class="fullscreen bg-white">
+        <section v-if="step === 9" class="fullscreen bg-white">
           <div class="card-50 slow">
             <figure>
               <span
@@ -160,7 +220,7 @@
           </div>
         </section>
 
-        <section v-if="step === 7">
+        <section v-if="step === 10">
           <div class="wrap">
             <div class="content-center">
               <blockquote>
@@ -175,7 +235,7 @@
           </div>
         </section>
 
-        <section v-if="step === 8" class="fullscreen bg-white slow">
+        <section v-if="step === 11" class="fullscreen bg-white slow">
           <div class="card-50 slow">
             <figure>
               <span
@@ -215,7 +275,7 @@
           </div>
         </section>
 
-        <section v-if="step === 9">
+        <section v-if="step === 12">
           <div class="wrap">
             <div class="content-center">
               <blockquote>
@@ -230,7 +290,7 @@
           </div>
         </section>
 
-        <section v-if="step === 10" class="fullscreen bg-white slow">
+        <section v-if="step === 13" class="fullscreen bg-white slow">
           <div class="card-50 slow">
             <figure>
               <span
@@ -269,7 +329,7 @@
           </div>
         </section>
 
-        <section v-if="step === 11">
+        <section v-if="step === 14">
           <div class="wrap">
             <div class="content-center">
               <blockquote>
@@ -283,16 +343,16 @@
           </div>
         </section>
 
-        <section v-if="step === 12">
+        <section v-if="step === 15">
           <div class="wrap aligncenter">
             <p class="text-subtitle">Entwickler berichten über Vue.js</p>
             <h2>In-Sight Developers</h2>
           </div>
         </section>
 
-        <section v-if="step >= 13 && step < 15" class="fullscreen bg-trans-dark">
+        <section v-if="step >= 16 && step < 18" class="fullscreen bg-trans-dark">
           <div class="wrap">
-            <h2>Umfrage</h2>
+            <h2>Umfragen</h2>
             <p class="text-intro">Entwickler aus 88 Ländern wurden befragt.</p>
             <ul class="flexblock metrics">
               <li>
@@ -304,32 +364,42 @@
               <li>
                 <span>81 %</span> empfanden es als einfach, Vue.js in ihr System zu integrieren
               </li>
-              <li v-if="step === 14" class="slideInUp">
+              <li v-if="step === 17" class="slideInUp">
                 <span>75 %</span> nahmen Vue.js in in den letzten 12 Monaten in ihrem Teck-Stack auf
               </li>
-              <li v-if="step === 14" class="slideInUp">
-                <span>50 %</span> empfinden es, dass Vue.js sehr anfängerfreundlich ist
+              <li v-if="step === 17" class="slideInUp">
+                <span>15 %</span> glauben, dass Vue.js schlecht skalierbar ist
               </li>
-              <li v-if="step === 14" class="slideInUp">
+              <li v-if="step === 17" class="slideInUp">
                 <span>54 %</span> glauben, dass Vue.js noch populärer in ihrer Organisation wird
               </li>
             </ul>
           </div>
         </section>
 
-        <section v-if="step === 15">
+        <section v-if="step === 18">
           <div class="wrap aligncenter">
             <p class="text-subtitle">Was kann das Framework</p>
             <h2>Vue.js in Action</h2>
           </div>
         </section>
 
-        <section v-if="step === 16">
+        <section v-if="step === 19">
           <header class="bg-white">
             <div class="wrap">
-              <p class="logo"><span class="alignright">Total: ${{total}}</span></p>
+              <div style="text-align: right">
+                <div style="display: inline-block">
+                  Quantity: <input
+                        style="max-width: 50%; border: none; padding: 0; font-weight: 300"
+                        v-model="product.amount">
+                </div>
+                <div style="display: inline-block">
+                  Total: ${{total}}
+                </div>
+              </div>
             </div>
           </header>
+
           <div class="wrap">
             <div class="grid vertical-align">
               <div class="column">
@@ -338,7 +408,6 @@
                     <input style="margin-bottom: 0.83em" v-model="product.title">
                     <input style="margin-bottom: 0.83em" v-model="product.description">
                     <input style="margin-bottom: 0.83em" v-model="product.price">
-                    <input style="margin-bottom: 0.83em" v-model="product.amount">
                   </fieldset>
                 </form>
               </div>
@@ -353,6 +422,10 @@
               </div>
             </div>
           </div>
+        </section>
+
+        <section v-if="step === 20">
+
         </section>
 
         <section v-if="false">
@@ -409,7 +482,7 @@
 
   @media (min-width: 768px) {
     .fullscreen [class*='card'] .flex-content, .fullscreen [class*='card'] blockquote {
-      padding: 3rem;
+      /*padding: 3rem;*/
     }
   }
 

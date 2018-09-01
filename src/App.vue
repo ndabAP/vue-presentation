@@ -15,51 +15,43 @@
           <div class="wrap">
             <div class="content-center">
               <blockquote>
-                <p>&#187;Vue is a progressive framework for building user interfaces. Unlike other
-                  monolithic frameworks, Vue is designed from the ground up to be incrementally
-                  adoptable.&#171;</p>
+                <p>&#187;Vue ist ein fortschrittliches Framework für den Aufbau von Benutzeroberflächen. Im Gegensatz zu
+                  anderen monolithischen Frameworks ist Vue von Grund auf so konzipiert, dass es inkrementell einsetzbar
+                  ist.&#171;</p>
                 <p><cite><a href="#">Vue.js</a> website</cite></p>
               </blockquote>
             </div>
           </div>
         </section>
 
-        <section class="bg-brown fullscreen" v-if="step === 3">
+        <section class="bg-blue fullscreen" v-if="step === 3">
           <div class="wrap">
             <h2>Quick Facts</h2>
             <p class="text-intro">Vue.js in der wilden Landschaft.</p>
-            <ul class="flexblock">
+            <ul class="flexblock metrics">
               <li>
-                <h3 class="s-b">Github Stars</h3>
-                112.000
+                <span>112.000</span>
+                Github Stars
               </li>
               <li>
-                <h3 class="s-b">Core Developer</h3>
-                30
+                <span>30</span>
+                Core Developers
               </li>
               <li>
-                <h3 class="s-b">Weekly Downloads</h3>
-                500.000
+                <span>800.000</span>
+                Weekly Downloads
               </li>
               <li>
-                <h3 class="s-b">Github Repositories</h3>
-                89
+                <span>#3</span>
+                Github popularity
               </li>
               <li>
-                <h3 class="s-b">Github popularity</h3>
-                3.
+                <span>30</span>
+                Sponsors
               </li>
               <li>
-                <h3 class="s-b">Sponsors</h3>
-                30
-              </li>
-              <li>
-                <h3 class="s-b">Core Repositories</h3>
-                8
-              </li>
-              <li>
-                <h3 class="s-b">Github related</h3>
-                12.000
+                <span>12.000</span>
+                Related projects
               </li>
             </ul>
           </div>
@@ -69,8 +61,8 @@
           <div class="wrap">
             <div class="content-center">
               <blockquote>
-                <p>&#187;Over the last two years, Vue.js has grown at a faster percentage rate than any of the other
-                  dominant JavaScript frameworks.&#171;</p>
+                <p>&#187;In den letzten zwei Jahren ist Vue.js schneller gewachsen als alle anderen gängigen
+                  JavaScript-Frameworks.&#171;</p>
                 <p><cite><a href="#">Github</a> trends</cite></p>
               </blockquote>
             </div>
@@ -185,8 +177,8 @@
           <div class="card-50 slow">
             <figure>
               <span
-                      class="background anim dark"
-                      style="background: url('images/slides/behance.png') 50% 5%;">
+                      class="background anim"
+                      style="background: url('images/slides/behance.png') 50% 5%; opacity: 0.5">
               </span>
             </figure>
             <div class="flex-content">
@@ -224,11 +216,8 @@
           <div class="wrap">
             <div class="content-center">
               <blockquote>
-                <p>&#187;Jedes Mal, wenn ich irgendwelche Probleme hatte, war es normalerweise, weil ich
-                  es zerdacht
-                  habe und
-                  ich war angenehm überrascht, als es wirklich so einfach zu implementieren
-                  war.&#171;</p>
+                <p>&#187;Jedes Mal, wenn ich irgendwelche Probleme hatte, war es normalerweise, weil ich zu komplex
+                  dachte und ich war angenehm überrascht, als es wirklich so einfach zu implementieren war.&#171;</p>
                 <p><cite><a href="#">Erin Depew</a> Software Engineer at Behance</cite></p>
               </blockquote>
             </div>
@@ -239,8 +228,8 @@
           <div class="card-50 slow">
             <figure>
               <span
-                      class="background anim dark"
-                      style="background: url('images/slides/clemengerbbdo.png') 50% 0%;">
+                      class="background anim"
+                      style="background: url('images/slides/clemengerbbdo.png') 50% 0%; opacity: 0.5">
               </span>
             </figure>
             <div class="flex-content">
@@ -294,8 +283,8 @@
           <div class="card-50 slow">
             <figure>
               <span
-                      class="background anim dark"
-                      style="background: url('images/slides/codeship.png') 50% 0%;">
+                      class="background anim"
+                      style="background: url('images/slides/codeship.png') 50% 0%; opacity: 0.5">
               </span>
             </figure>
             <div class="flex-content">
@@ -333,10 +322,8 @@
           <div class="wrap">
             <div class="content-center">
               <blockquote>
-                <p>&#187;Vue.js bietet ein solides Fundament das beliebig erweitert werden kann und es
-                  ist nicht
-                  einschränkend
-                  bei Tools, mit denen wir außerdem unsere Ziele verfolgen.&#171;</p>
+                <p>&#187;Vue.js bietet ein solides Fundament, das beliebig erweitert werden kann und es
+                  ist nicht einschränkend bei Tools, mit denen wir außerdem arbeiten.&#171;</p>
                 <p><cite><a href="#">Roman Kuba</a> Lead Frontend Developer at Codeship</cite></p>
               </blockquote>
             </div>
@@ -350,7 +337,7 @@
           </div>
         </section>
 
-        <section v-if="step >= 16 && step < 18" class="fullscreen bg-trans-dark">
+        <section v-if="step >= 16 && step < 18" class="fullscreen bg-green">
           <div class="wrap">
             <h2>Umfragen</h2>
             <p class="text-intro">Entwickler aus 88 Ländern wurden befragt.</p>
@@ -365,10 +352,10 @@
                 <span>81 %</span> empfanden es als einfach, Vue.js in ihr System zu integrieren
               </li>
               <li v-if="step === 17" class="slideInUp">
-                <span>75 %</span> nahmen Vue.js in in den letzten 12 Monaten in ihrem Teck-Stack auf
+                <span>75 %</span> nahmen Vue.js in in den letzten 12 Monaten in ihrem Tech-Stack auf
               </li>
               <li v-if="step === 17" class="slideInUp">
-                <span>15 %</span> glauben, dass Vue.js schlecht skalierbar ist
+                <span>15 %</span> glauben, dass Apps mit Vue.js schlecht skalierbar sind
               </li>
               <li v-if="step === 17" class="slideInUp">
                 <span>54 %</span> glauben, dass Vue.js noch populärer in ihrer Organisation wird
@@ -518,6 +505,10 @@
 
   .logo {
     text-transform: none;
+  }
+
+  input, textarea {
+    background-color: transparent;
   }
 </style>
 

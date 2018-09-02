@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <slide :steps="30">
+    <slide :steps="35">
       <article>
         <section v-if="step === 1" class="bg-purple aligncenter">
                     <span class="background dark"
@@ -17,8 +17,8 @@
               <blockquote>
                 <p>&#187;Vue ist ein fortschrittliches Framework für den Aufbau von Benutzeroberflächen. Im Gegensatz zu
                   anderen monolithischen Frameworks ist Vue von Grund auf so konzipiert, dass es inkrementell einsetzbar
-                  ist.&#171;</p>
-                <p><cite><a href="#">Vue.js</a> website</cite></p>
+                  ist.&#171;<sup>1</sup></p>
+                <p><cite><a href="#">Vue.js</a> websit</cite></p>
               </blockquote>
             </div>
           </div>
@@ -26,7 +26,7 @@
 
         <section class="bg-blue fullscreen" v-if="step === 3">
           <div class="wrap">
-            <h2>Quick Facts</h2>
+            <h2>Quick Facts<sup>2</sup></h2>
             <p class="text-intro">Vue.js in der wilden Landschaft.</p>
             <ul class="flexblock metrics">
               <li>
@@ -38,8 +38,8 @@
                 Core Developers
               </li>
               <li>
-                <span>800.000</span>
-                Weekly Downloads
+                <span>2 Mil.</span>
+                Monthly Downloads
               </li>
               <li>
                 <span>#3</span>
@@ -62,7 +62,7 @@
             <div class="content-center">
               <blockquote>
                 <p>&#187;In den letzten zwei Jahren ist Vue.js schneller gewachsen als alle anderen gängigen
-                  JavaScript-Frameworks.&#171;</p>
+                  JavaScript-Frameworks.&#171;<sup>2</sup></p>
                 <p><cite><a href="#">Github</a> trends</cite></p>
               </blockquote>
             </div>
@@ -83,7 +83,7 @@
             <ul class="flexblock">
               <li>
                 <div>
-                  <h3>Alibaba</h3>
+                  <h3>Alibaba<sup>3</sup></h3>
                   <ol>
                     <li>Revenue: $39 Mrd.</li>
                     <li>Employees: 66.000</li>
@@ -93,7 +93,7 @@
               </li>
               <li>
                 <div>
-                  <h3>Adobe</h3>
+                  <h3>Adobe<sup>3</sup></h3>
                   <ol>
                     <li>Revenue: $7 Mrd.</li>
                     <li>Employees: 15.000</li>
@@ -103,7 +103,7 @@
               </li>
               <li>
                 <div>
-                  <h3>GitLab</h3>
+                  <h3>GitLab<sup>3</sup></h3>
                   <ol>
                     <li>Revenue: $6 Mill.</li>
                     <li>Employees: 325</li>
@@ -113,7 +113,7 @@
               </li>
               <li>
                 <div>
-                  <h3>NASA</h3>
+                  <h3>NASA<sup>4</sup></h3>
                   <ol>
                     <li>Vol.: $18 Mrd.</li>
                     <li>Employees: 17.000</li>
@@ -124,7 +124,7 @@
 
               <li v-if="step === 7" class="slideInUp">
                 <div>
-                  <h3>Facebook</h3>
+                  <h3>Facebook<sup>3</sup></h3>
                   <ol>
                     <li>Revenue: $40 Mrd.</li>
                     <li>Employees: 27.000</li>
@@ -134,7 +134,7 @@
               </li>
               <li v-if="step === 7" class="slideInUp">
                 <div>
-                  <h3>Netflix</h3>
+                  <h3>Netflix<sup>3</sup></h3>
                   <ol>
                     <li>Revenue: $11 Mrd.</li>
                     <li>Employees: 5.000</li>
@@ -144,7 +144,7 @@
               </li>
               <li v-if="step === 7" class="slideInUp">
                 <div>
-                  <h3>Wizz Air</h3>
+                  <h3>Wizz Air<sup>3</sup></h3>
                   <ol>
                     <li>Revenue: $1 Mrd.</li>
                     <li>Employees: 2.000</li>
@@ -154,7 +154,7 @@
               </li>
               <li v-if="step === 7" class="slideInUp">
                 <div>
-                  <h3>Codeship</h3>
+                  <h3>Codeship<sup>3</sup></h3>
                   <ol>
                     <li>Revenue: $3 Mill.</li>
                     <li>Employees: 27</li>
@@ -169,11 +169,11 @@
         <section v-if="step === 8">
           <div class="wrap aligncenter">
             <p class="text-subtitle">Firmen berichten über Vue.js</p>
-            <h2>Case Studies</h2>
+            <h2>Case Studies<sup>5</sup></h2>
           </div>
         </section>
 
-        <section v-if="step === 9" class="fullscreen bg-white slow">
+        <section v-if="step === 9" class="fullscreen bg-white">
           <div class="card-50">
             <figure>
               <span
@@ -224,8 +224,8 @@
           </div>
         </section>
 
-        <section v-if="step === 11" class="fullscreen bg-white slow">
-          <div class="card-50 slow">
+        <section v-if="step === 11" class="fullscreen bg-white">
+          <div class="card-50">
             <figure>
               <span
                       class="background anim"
@@ -269,9 +269,7 @@
             <div class="content-center">
               <blockquote>
                 <p>&#187;Vue.js ermöglicht ein komfortables Entwicklen in unserem Team. Es ist so nah an
-                  nativem
-                  JavaScript, dass
-                  es extrem einfach ist damit zu starten und zu arbeiten.&#171;</p>
+                  nativem JavaScript, dass es extrem einfach ist damit zu starten und zu arbeiten.&#171;</p>
                 <p><cite><a href="#">Sylvain Simao</a> Technical Lead at Clemenger BBDO Melbourne</cite>
                 </p>
               </blockquote>
@@ -279,8 +277,8 @@
           </div>
         </section>
 
-        <section v-if="step === 13" class="fullscreen bg-white slow">
-          <div class="card-50 slow">
+        <section v-if="step === 13" class="fullscreen bg-white">
+          <div class="card-50">
             <figure>
               <span
                       class="background anim"
@@ -339,7 +337,7 @@
 
         <section v-if="step >= 16 && step < 18" class="fullscreen bg-secondary">
           <div class="wrap">
-            <h2>Umfragen</h2>
+            <h2>Umfrage<sup>5</sup></h2>
             <p class="text-intro">Entwickler aus 88 Ländern wurden befragt.</p>
             <ul class="flexblock metrics">
               <li>
@@ -442,6 +440,21 @@
           </div>
         </section>
 
+        <section v-if="step === 21">
+          <div class="wrap">
+            <h2>Sign-up</h2>
+            <p class="text-intro">Please give us your data.</p>
+            <form action="/" method="post">
+              <p style="margin-bottom: 0; margin-top: 0" v-if="!isValidEMail">E-Mail is not valid</p>
+              <input style="margin-bottom: 0.83em;" placeholder="E-Mail" v-model="user.eMail">
+              <p style="margin-bottom: 0; margin-top: 0" v-if="!isValidPassword">
+                Password must be at least 8 characters and contain one letter
+              </p>
+              <input style="margin-bottom: 0.83em" placeholder="Password" v-model="user.password">
+            </form>
+          </div>
+        </section>
+
         <section v-if="step === 22">
           <div class="wrap aligncenter">
             <p class="text-subtitle">Angular, React und Co.</p>
@@ -507,7 +520,7 @@
 
         <section v-if="step === 24" class="aligncenter">
           <div class="wrap">
-            <h2>Mögliche Lernkurven</h2>
+            <h2>Mögliche Lernkurven<sup>6</sup></h2>
             <p class="text-intro">Viele Nutzer berichten von einer ähnlichen Lernkurve.</p>
             <learning-curve/>
           </div>
@@ -515,7 +528,7 @@
 
         <section v-if="step === 25" class="aligncenter">
           <div class="wrap">
-            <h2>Memory usage</h2>
+            <h2>Memory usage<sup>7</sup></h2>
             <p class="text-intro">Vue.js verbraucht weniger, jedoch sind die Unterschiede maginal.</p>
             <performance-comparison/>
           </div>
@@ -532,7 +545,7 @@
           <div class="wrap">
             <div class="content-left">
               <h2>Alice</h2>
-              <p style="margin-bottom: 0">Aber hinter Vue.js steht keine große Firma.</p>
+              <p style="margin-bottom: 0">Aber hinter Vue.js steht keine große Firma. Ist das nicht schlecht?</p>
               <small>Just now</small>
             </div>
           </div>
@@ -542,8 +555,8 @@
           <div class="wrap">
             <div class="content-right" style="text-align: right">
               <h2>Bob</h2>
-              <p style="margin-bottom: 0">So wie Linux. Das kann auch ein Vorteil sein. So sind die Entwickler nicht starren Firmenzielen
-                unterlegen.</p>
+              <p style="margin-bottom: 0">So wie Linux oder jQuery. Das kann auch ein Vorteil sein. So sind die
+                Entwickler nicht starren Firmenzielen unterlegen.</p>
               <small>Just now</small>
             </div>
           </div>
@@ -564,9 +577,91 @@
             <div class="content-right" style="text-align: right">
               <h2>Bob</h2>
               <p style="margin-bottom: 0">Gefühlt ist Vue.js 55 % reines JavaScript, 15 % HTML, 20 % CSS und 10 %
-                Vue.js-spezifisch. HTML und SCSS bleiben völlig unberührt.</p>
+                Vue.js-spezifisch. Laut Nutzern ist die Lernkurve zudem sehr steil.</p>
               <small>Just now</small>
             </div>
+          </div>
+        </section>
+
+        <section v-if="step === 31" class="bg-primary">
+          <div class="wrap">
+            <div class="content-left">
+              <h2>Alice</h2>
+              <p style="margin-bottom: 0">Aber Bob, das klingt alles wahnsinning wartungsaufwendig.</p>
+              <small>Just now</small>
+            </div>
+          </div>
+        </section>
+
+        <section v-if="step === 32" class="bg-primary">
+          <div class="wrap">
+            <div class="content-right" style="text-align: right">
+              <h2>Bob</h2>
+              <p style="margin-bottom: 0">Überhaupt nicht, Alice! Vue.js bringt eine CLI mit, welche automatisch
+                Code-Qualität gewährleistet, produktionsfähige Apps ohne Konfigurationen erstellt und sogar eine
+                grafische Oberfläche bietet.</p>
+              <small>Just now</small>
+            </div>
+          </div>
+        </section>
+
+        <section v-if="step === 33">
+          <div class="wrap aligncenter">
+            <p class="text-subtitle">Es ist noch lange nicht Schluss.</p>
+            <h2>Vue.js Zukunft</h2>
+          </div>
+        </section>
+
+        <section v-if="step === 34" class="fullscreen bg-purple">
+          <div class="wrap">
+            <h2>Aussicht<sup>2</sup></h2>
+            <p class="text-intro">Vue.js hat ehrgeizige Ziele, die in die nächsten Jahre hinein reichen.</p>
+            <ul class="flexblock">
+              <li>
+                <div>
+                  <h3>Features</h3>
+                  <ol>
+                    <li>Neue Features durchgehen RFC-Prozess</li>
+                    <li>Major-Changes sechs Monate Vorlauf</li>
+                    <li>Minor-Changes mit dreiwöchiger Beta</li>
+                  </ol>
+                </div>
+              </li>
+              <li>
+                <div>
+                  <h3>Sicherheit</h3>
+                  <ol>
+                    <li>Major-Changes besitzen 18 Monate LTS</li>
+                    <li>Danach 18 weitere Monate für Fehler</li>
+                    <li>Vue.js besitzt 100 % Testabdeckung</li>
+                  </ol>
+                </div>
+              </li>
+              <li>
+                <div>
+                  <h3>Zukunft</h3>
+                  <ol>
+                    <li>Support für WebAssembly</li>
+                    <li>Dank <code style="display: contents">--modern</code> moderne Browser</li>
+                    <li>Unterstützung für Web Components</li>
+                  </ol>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </section>
+
+        <section v-if="step === 35">
+          <div class="wrap">
+            <h2>Quellen</h2>
+            <p class="text-intro">Wer hat's erfunden.</p>
+            <p style="margin-bottom: 0"><sup>1</sup> https://vuejs.org</p>
+            <p style="margin-bottom: 0"><sup>2</sup> https://github.com</p>
+            <p style="margin-bottom: 0"><sup>3</sup> https://www.netguru.co</p>
+            <p style="margin-bottom: 0"><sup>4</sup> https://twitter.com</p>
+            <p style="margin-bottom: 0"><sup>5</sup> https://www.monterail.com</p>
+            <p style="margin-bottom: 0"><sup>6</sup> https://discventionstech.wordpress.com</p>
+            <p style="margin-bottom: 0"><sup>7</sup> https://www.stefankrause.net</p>
           </div>
         </section>
       </article>
@@ -603,6 +698,14 @@ export default {
       amount: 1
     },
 
+    user: {
+      eMail: '',
+      password: ''
+    },
+
+    isValidEMail: true,
+    isValidPassword: true,
+
     todo: '',
     todos: [],
 
@@ -614,6 +717,16 @@ export default {
       get () {
         return this.product.price * this.product.amount
       }
+    }
+  },
+
+  watch: {
+    'user.eMail' () {
+      this.isValidEMail = /\S+@\S+\.\S+/.test(this.user.eMail)
+    },
+
+    'user.password' () {
+      this.isValidPassword = /^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$/.test(this.user.password)
     }
   },
 

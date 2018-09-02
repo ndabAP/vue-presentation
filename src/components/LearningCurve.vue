@@ -26,9 +26,8 @@ export default {
     ]
     const chart = new G2.Chart({
       container: 'c1',
-      padding: ['auto', 100, 'auto', 100],
       height: 425,
-      width: 900
+      width: 1000
     })
     chart.scale('value', {
       min: 0
@@ -39,33 +38,90 @@ export default {
     chart.axis('value', {
       label: null
     })
+    chart.axis('step', {
+      label: {
+        textStyle: {
+          fontSize: '18'
+        }
+      }
+    })
     chart.guide().dataMarker({
       position: ['First steps', 2],
-      content: 'ES5, control DOM'
+      content: 'ES5, control DOM',
+      style: {
+        text: {
+          fontSize: '16'
+        }
+      }
     }).dataMarker({
       position: ['First steps', 4],
-      content: 'ES6, JSX'
+      content: 'ES6, JSX',
+      style: {
+        text: {
+          fontSize: '16'
+        }
+      }
     }).dataMarker({
       position: ['First steps', 5],
-      content: 'TypeScript, workflow'
+      content: 'TypeScript, workflow',
+      style: {
+        text: {
+          fontSize: '16'
+        }
+      }
     }).dataMarker({
       position: ['Diving deeper', 5],
-      content: 'ES6, .vue files'
+      content: 'ES6, .vue files',
+      style: {
+        text: {
+          fontSize: '16'
+        }
+      }
     }).dataMarker({
       position: ['Diving deeper', 7],
-      content: 'Everything is JavaScript'
+      content: 'Everything is JavaScript',
+      style: {
+        text: {
+          fontSize: '16'
+        }
+      }
     }).dataMarker({
       position: ['Diving deeper', 9],
-      content: 'Components, modules, syntax'
+      content: 'Components, modules, syntax',
+      style: {
+        text: {
+          fontSize: '16'
+        }
+      }
     }).dataMarker({
       position: ['Building apps', 6],
-      content: 'Component orchestration, communication, routing'
+      content: 'Component orchestration, communication, routing',
+      style: {
+        text: {
+          fontSize: '16'
+        }
+      }
     }).dataMarker({
       position: ['Building apps', 9],
-      content: 'State management'
+      content: 'State management',
+      style: {
+        text: {
+          fontSize: '16'
+        }
+      }
     }).dataMarker({
       position: ['Building apps', 10],
-      content: 'Dependency injection, putting it all together'
+      content: 'Dependency injection, putting it all together',
+      style: {
+        text: {
+          fontSize: '16'
+        }
+      }
+    })
+    chart.legend('framework', {
+      textStyle: {
+        fontSize: '16'
+      }
     })
     chart.tooltip(false)
     chart.source(data)

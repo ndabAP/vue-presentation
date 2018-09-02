@@ -12,6 +12,7 @@
     "animate.css": "^3.7.0",
     "eagle.js": "^0.3.0",
     "frappe-charts": "^1.1.0",
+    "lodash": "^4.17.10",
     "vue": "^2.5.17",
     "vue-router": "^3.0.1",
     "vue2-frappe": "^1.0.23",

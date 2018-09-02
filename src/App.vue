@@ -413,20 +413,32 @@
 
         <section v-if="step === 20" class="aligncenter">
           <div class="wrap">
+            <button
+                    :disabled="Object.keys(removedTodo).length === 0"
+                    class="button ghost"
+                    style="border: none; text-transform: none; margin-bottom: 0.83em"
+                    @click="undoTodo">Undo
+            </button>
             <ul class="flexblock specs">
               <li style="padding-bottom: 0.83em; padding-top: 0">
                 <div>
-                  <form @click.prevent>
+                  <form @submit.prevent="saveTodo">
                     <fieldset style="padding: 0;">
-                      <input placeholder="To do" v-model="todo">
+                      <input placeholder="Write a to do ..." v-model="todo">
                     </fieldset>
                   </form>
                 </div>
               </li>
-              <li style="padding-bottom: 0.83rem; padding-top: 0" v-for="todo in todos">
-                {{todo}}
+              <li
+                      v-if="todos.length > 0"
+                      style="padding-bottom: 0.83rem; padding-top: 0"
+                      @click="removeTodo(todo.identifier)"
+                      v-for="todo in todos"
+                      :key="todo.identifier">
+                {{todo.text}}
               </li>
             </ul>
+            <p v-if="todos.length === 0">There are no to dos, yet.</p>
           </div>
         </section>
 
@@ -498,6 +510,12 @@
     font-size: 100%;
     hyphens: auto;
     overflow: hidden;
+  }
+
+  button:hover, button:active {
+    box-shadow: none;
+    border: none;
+    outline: none;
   }
 
   table {
@@ -601,6 +619,10 @@
 
 <script>
 import { Slideshow } from 'eagle.js'
+import find from 'lodash/find'
+import findIndex from 'lodash/findIndex'
+import uniqueId from 'lodash/uniqueId'
+import cloneDeep from 'lodash/cloneDeep'
 
 import LearningCurve from './components/LearningCurve'
 
@@ -623,7 +645,9 @@ export default {
     },
 
     todo: '',
-    todos: ['Buy milk', 'Go out with dog', 'Learn football']
+    todos: [],
+
+    removedTodo: {}
   }),
 
   computed: {
@@ -631,6 +655,33 @@ export default {
       get () {
         return this.product.price * this.product.amount
       }
+    }
+  },
+
+  methods: {
+    removeTodo (identifier) {
+      const todo = find(this.todos, ['identifier', identifier])
+      const index = findIndex(this.todos, ['identifier', identifier])
+
+      this.removedTodo = todo
+
+      this.todos.splice(index, 1)
+    },
+
+    saveTodo () {
+      const todo = cloneDeep(this.todo)
+      this.todos.push({
+        identifier: uniqueId(),
+        text: todo
+      })
+
+      this.todo = ''
+    },
+
+    undoTodo () {
+      this.todos.push(this.removedTodo)
+
+      this.removedTodo = {}
     }
   }
 }

@@ -516,7 +516,7 @@
         <section v-if="step === 25" class="aligncenter">
           <div class="wrap">
             <h2>Memory usage</h2>
-            <p class="text-intro">Vue.js ist schneller, jedoch sind die Unterschiede maginal.</p>
+            <p class="text-intro">Vue.js verbraucht weniger, jedoch sind die Unterschiede maginal.</p>
             <performance-comparison/>
           </div>
         </section>

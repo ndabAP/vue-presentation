@@ -7,7 +7,7 @@
                           style="background-image:url('images/slides/intro.jpg')"></span>
           <div class="wrap slow">
             <h1 class="text-landing">Modern Web Development with Vue.js</h1>
-            <p class="text-intro">State of the Art. Vue.js Stärken. Ausblick.</p>
+            <p class="text-intro">State of the Art. Vue.js Stärken. Konkurrenz. Ausblick.</p>
           </div>
         </section>
 
@@ -18,7 +18,7 @@
                 <p>&#187;Vue ist ein fortschrittliches Framework für den Aufbau von Benutzeroberflächen. Im Gegensatz zu
                   anderen monolithischen Frameworks ist Vue von Grund auf so konzipiert, dass es inkrementell einsetzbar
                   ist.&#171;<sup>1</sup></p>
-                <p><cite><a href="#">Vue.js</a> websit</cite></p>
+                <p><cite><a href="#">Vue.js</a> website</cite></p>
               </blockquote>
             </div>
           </div>

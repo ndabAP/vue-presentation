@@ -520,6 +520,55 @@
             <performance-comparison/>
           </div>
         </section>
+
+        <section v-if="step === 26">
+          <div class="wrap aligncenter">
+            <p class="text-subtitle">Fragen wir Alice und Bob</p>
+            <h2>Immer noch Zweifel?</h2>
+          </div>
+        </section>
+
+        <section v-if="step === 27" class="bg-primary">
+          <div class="wrap">
+            <div class="content-left">
+              <h2>Alice</h2>
+              <p style="margin-bottom: 0">Aber hinter Vue.js steht keine große Firma.</p>
+              <small>Just now</small>
+            </div>
+          </div>
+        </section>
+
+        <section v-if="step === 28" class="bg-primary">
+          <div class="wrap">
+            <div class="content-right" style="text-align: right">
+              <h2>Bob</h2>
+              <p style="margin-bottom: 0">So wie Linux. Das kann auch ein Vorteil sein. So sind die Entwickler nicht starren Firmenzielen
+                unterlegen.</p>
+              <small>Just now</small>
+            </div>
+          </div>
+        </section>
+
+        <section v-if="step === 29" class="bg-primary">
+          <div class="wrap">
+            <div class="content-left">
+              <h2>Alice</h2>
+              <p style="margin-bottom: 0">Na ja, niemand bei uns kann Vue.js.</p>
+              <small>Just now</small>
+            </div>
+          </div>
+        </section>
+
+        <section v-if="step === 30" class="bg-primary">
+          <div class="wrap">
+            <div class="content-right" style="text-align: right">
+              <h2>Bob</h2>
+              <p style="margin-bottom: 0">Gefühlt ist Vue.js 55 % reines JavaScript, 15 % HTML, 20 % CSS und 10 %
+                Vue.js-spezifisch. HTML und SCSS bleiben völlig unberührt.</p>
+              <small>Just now</small>
+            </div>
+          </div>
+        </section>
       </article>
     </slide>
   </div>

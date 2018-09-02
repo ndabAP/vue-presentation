@@ -173,8 +173,8 @@
           </div>
         </section>
 
-        <section v-if="step === 9" class="fullscreen bg-white">
-          <div class="card-50 slow">
+        <section v-if="step === 9" class="fullscreen bg-white slow">
+          <div class="card-50">
             <figure>
               <span
                       class="background anim"
@@ -337,7 +337,7 @@
           </div>
         </section>
 
-        <section v-if="step >= 16 && step < 18" class="fullscreen bg-green">
+        <section v-if="step >= 16 && step < 18" class="fullscreen bg-secondary">
           <div class="wrap">
             <h2>Umfragen</h2>
             <p class="text-intro">Entwickler aus 88 Ländern wurden befragt.</p>
@@ -488,6 +488,18 @@
                 <td>No</td>
                 <td>Yes</td>
               </tr>
+              <tr>
+                <td class="s-b">HTML</td>
+                <td>Yes</td>
+                <td>Yes</td>
+                <td>No</td>
+              </tr>
+              <tr>
+                <td class="s-b">Component CSS</td>
+                <td>Yes</td>
+                <td>Yes</td>
+                <td>No</td>
+              </tr>
               </tbody>
             </table>
           </div>
@@ -500,10 +512,90 @@
             <learning-curve/>
           </div>
         </section>
+
+        <section v-if="step === 25" class="aligncenter">
+          <div class="wrap">
+            <h2>Memory usage</h2>
+            <p class="text-intro">Vue.js ist schneller, jedoch sind die Unterschiede maginal.</p>
+            <performance-comparison/>
+          </div>
+        </section>
       </article>
     </slide>
   </div>
 </template>
+
+<script>
+import { Slideshow } from 'eagle.js'
+import find from 'lodash/find'
+import findIndex from 'lodash/findIndex'
+import uniqueId from 'lodash/uniqueId'
+import cloneDeep from 'lodash/cloneDeep'
+
+import LearningCurve from './components/LearningCurve'
+import PerformanceComparison from './components/PerformanceComparison'
+
+Slideshow.methods.handleResize = () => null
+Slideshow.methods.click = () => null
+
+export default {
+  mixins: [Slideshow],
+
+  components: {
+    LearningCurve,
+    PerformanceComparison
+  },
+
+  data: () => ({
+    product: {
+      title: 'Jeans',
+      description: 'A well fitting Jeans. Modern. Stylish.',
+      price: 50,
+      amount: 1
+    },
+
+    todo: '',
+    todos: [],
+
+    removedTodo: {}
+  }),
+
+  computed: {
+    total: {
+      get () {
+        return this.product.price * this.product.amount
+      }
+    }
+  },
+
+  methods: {
+    removeTodo (identifier) {
+      const todo = find(this.todos, ['identifier', identifier])
+      const index = findIndex(this.todos, ['identifier', identifier])
+
+      this.removedTodo = todo
+
+      this.todos.splice(index, 1)
+    },
+
+    saveTodo () {
+      const todo = cloneDeep(this.todo)
+      this.todos.push({
+        identifier: uniqueId(),
+        text: todo
+      })
+
+      this.todo = ''
+    },
+
+    undoTodo () {
+      this.todos.push(this.removedTodo)
+
+      this.removedTodo = {}
+    }
+  }
+}
+</script>
 
 <style lang="scss">
   html {
@@ -616,73 +708,3 @@
     background-color: transparent;
   }
 </style>
-
-<script>
-import { Slideshow } from 'eagle.js'
-import find from 'lodash/find'
-import findIndex from 'lodash/findIndex'
-import uniqueId from 'lodash/uniqueId'
-import cloneDeep from 'lodash/cloneDeep'
-
-import LearningCurve from './components/LearningCurve'
-
-Slideshow.methods.handleResize = () => null
-Slideshow.methods.click = () => null
-
-export default {
-  mixins: [Slideshow],
-
-  components: {
-    LearningCurve
-  },
-
-  data: () => ({
-    product: {
-      title: 'Jeans',
-      description: 'A well fitting Jeans. Modern. Stylish.',
-      price: 50,
-      amount: 1
-    },
-
-    todo: '',
-    todos: [],
-
-    removedTodo: {}
-  }),
-
-  computed: {
-    total: {
-      get () {
-        return this.product.price * this.product.amount
-      }
-    }
-  },
-
-  methods: {
-    removeTodo (identifier) {
-      const todo = find(this.todos, ['identifier', identifier])
-      const index = findIndex(this.todos, ['identifier', identifier])
-
-      this.removedTodo = todo
-
-      this.todos.splice(index, 1)
-    },
-
-    saveTodo () {
-      const todo = cloneDeep(this.todo)
-      this.todos.push({
-        identifier: uniqueId(),
-        text: todo
-      })
-
-      this.todo = ''
-    },
-
-    undoTodo () {
-      this.todos.push(this.removedTodo)
-
-      this.removedTodo = {}
-    }
-  }
-}
-</script>

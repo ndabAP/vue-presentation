@@ -7,7 +7,7 @@ import G2 from '@antv/g2'
 
 export default {
   mounted () {
-    const vue = [
+    const data = [
       { step: 'Seeing it first time', framework: 'Vue.js', value: 0 },
       { step: 'Seeing it first time', framework: 'React', value: 0 },
       { step: 'Seeing it first time', framework: 'Angular', value: 0 },
@@ -26,6 +26,7 @@ export default {
     ]
     const chart = new G2.Chart({
       container: 'c1',
+      padding: ['auto', 100, 'auto', 100],
       height: 425,
       width: 900
     })
@@ -67,7 +68,7 @@ export default {
       content: 'Dependency injection, putting it all together'
     })
     chart.tooltip(false)
-    chart.source(vue)
+    chart.source(data)
     chart.line().position('step*value').color('framework')
     chart.render()
   }

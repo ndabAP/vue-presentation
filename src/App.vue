@@ -7,7 +7,7 @@
                           style="background-image:url('images/slides/intro.jpg')"></span>
           <div class="wrap slow">
             <h1 class="text-landing">Modern Web Development with Vue.js</h1>
-            <p class="text-intro">State of the Art. Vue.js Stärken. Konkurrenz. Ausblick.</p>
+            <p class="text-intro">State of the Art. Vue.js-Stärken. Konkurrenz. Ausblick.</p>
           </div>
         </section>
 
@@ -197,7 +197,7 @@
                   <ul>
                     <li style="padding: 0">Vue.js-Schulungen der Teams</li>
                     <li style="padding: 0">Wechsel zu Vue.js</li>
-                    <li style="padding: 0">Die vorhanden Codebase migrieren</li>
+                    <li style="padding: 0">Die vorhandene Codebase migrieren</li>
                   </ul>
                 </li>
                 <li><span class="s-b">Results</span>

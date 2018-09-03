@@ -26,7 +26,7 @@ export default {
     ]
     const chart = new G2.Chart({
       container: 'c1',
-      padding: ['auto', 'auto', 'auto', 10],
+      padding: ['auto', 75, 'auto', 75],
       height: 425,
       width: 1000
     })

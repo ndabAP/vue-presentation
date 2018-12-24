@@ -1,21 +1,3 @@
 # vue-presentation
 
-## Project setup
-```
-yarn install
-```
-
-### Compiles and hot-reloads for development
-```
-yarn run serve
-```
-
-### Compiles and minifies for production
-```
-yarn run build
-```
-
-### Lints and fixes files
-```
-yarn run lint
-```
+This German presentation shows why to prefer Vue.js over React and Angular. To see it, run `$ npm run dev` and open the given link. It's also hosted [https://ndabap.github.io/vue-presentation/](here).
